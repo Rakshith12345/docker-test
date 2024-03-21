@@ -12,8 +12,5 @@ COPY . .
 EXPOSE 3000
 
 
-#add app
-COPY . ./
-
 #start app
 CMD ["npm","start"]
