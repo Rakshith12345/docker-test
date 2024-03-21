@@ -1,12 +1,15 @@
-FROM node:13.12.0-alpine
+FROM node:20-alpine
 
 #set working directory
 WORKDIR /app
 
-ENV PATH /app/node_modules/.bin:$path
-
+COPY package*.json .
 
 RUN npm install
+
+COPY . .
+
+EXPOSE 3000
 
 
 #add app
