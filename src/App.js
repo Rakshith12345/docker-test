@@ -3,10 +3,10 @@ import "./App.css";
 import Test from "./Test/Test";
 
 function App() {
-	<>
-	<h1>hello</h1>
-    return <Test />;
-  <?>
+  return <>
+  Hai Its a docker test
+  </>
+ 
 }
 
 export default App;
